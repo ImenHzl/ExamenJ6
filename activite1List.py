@@ -10,6 +10,6 @@ def chainelist(list):
     return listFinal
 
 
-list = ["A", "B", "B", 1, 2, 3, 2]
+list = input("entrer une liste :").split()
 result = chainelist(list)
-print(result)
+print(f"votre liste unique est: {result}")
