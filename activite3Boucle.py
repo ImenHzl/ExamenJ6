@@ -1,7 +1,7 @@
 def nombreGrand():
     nombres = [] # j'initialise une liste vide pour enregistrer les nombres
     for i in range(3): # on veut juste trois nombre
-        nombre = int(input("Entrez le nombre : ")) # 
+        nombre = int(input("Entrez le nombre : ")) 
         nombres.append(nombre)
     plus_grand_nombre = nombres[0]
     for elt in nombres:
