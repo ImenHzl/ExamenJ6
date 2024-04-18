@@ -11,7 +11,7 @@ def rotation_droite(liste, n):
 # Saisie de la liste par l'utilisateur
 liste_str = input("Entrez les éléments de la liste séparés par des espaces : ")
 
-# Transformation de la chaîne en tableau de caractères et séparation par espace
+# Transformation de la chaîne en LISTE de caractères et séparation par espace
 liste = liste_str.split()
 
 # Saisie du nombre de rotations par l'utilisateur

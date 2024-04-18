@@ -22,9 +22,5 @@ somme = nombre1 + nombre2
 
 # Affichage du résultat avec les nombres entiers :
 print(f"La somme de {nombre1} et {nombre2} est : {somme}")
-
-# Affichage du résultat avec les chaînes de caractères originales :
-print(f"La somme de {nombre1_str} et {nombre2_str} est : {somme}")
-
 # Affichage du résultat avec la concaténation de chaînes :
-print("La somme de", nombre1, "et", nombre2, "est :", somme)
+print("La somme de", nombre1, "et", nombre2, "est :", float(somme))

@@ -3,19 +3,16 @@
 
 def creer_pyramide_etoile(hauteur):
 
-    if hauteur <= 0:
-
-        print("Erreur: La hauteur doit être un nombre entier positif.")
-# Vérifier si la hauteur est valide
+  if hauteur <= 0:
+    
+    print("Erreur: La hauteur doit être un nombre entier positif.")
     return
 # FOR créer chaque étage de la pyramide range(debut de 1 est fini dans H+1)
-    for etage in range(1, hauteur + 1):
-        espaces = " " * (hauteur - etage)
+  for etage in range(1, hauteur + 1):
 # calculer le nombre d'espaces nécessaires pour aligner les étoiles de l'étage.
-
-        etoiles = "*" * (2 * etage - 1)
+    espaces = " " * (hauteur - etage)
 # calculer le nombre d'étoiles à afficher
-
+    etoiles = "*" * (2 * etage - 1)
 # Afficher l'étage de la pyramide
     print(espaces + etoiles)
 
