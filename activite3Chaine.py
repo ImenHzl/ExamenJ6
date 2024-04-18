@@ -5,15 +5,18 @@ nombre1_str = input("Entrez le premier nombre: ")
 nombre2_str = input("Entrez le deuxième nombre: ")
 
 # Convertir les chaînes de caractères en nombres entiers
-try:    #try except pour la gestion d'erreur si l'utilisateur ne tape pas un chiffre j'affiche un message erreur.
-  nombre1 = int(nombre1_str)   #j'ai utilisé la fonction int pour convertir la chaine de caract en nombre entiers.
-  nombre2 = int(nombre2_str)
+# try pour la gestion d'erreur si l'utilisateur ne tape pas un chiffre
+try:
+    # la fonction int pour convertir la chaine de caract en entiers
+    nombre1 = int(nombre1_str)
+    nombre2 = int(nombre2_str)
 except ValueError:
-  print("Erreur: Veuillez saisir uniquement des nombres entiers.")
-  exit()  # Quitter le programme si la conversion échoue
+    print("Erreur: Veuillez saisir uniquement des nombres entiers.")
+    # Quitter le programme si la conversion échoue
+    exit()
 
 # Effectuer l'addition des nombres
 somme = nombre1 + nombre2
 
 # Afficher le résultat
-print(f"La somme de {nombre1} et {nombre2} est : {somme}")  
+print(f"La somme de {nombre1} et {nombre2} est : {somme}")
