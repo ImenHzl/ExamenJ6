@@ -1,3 +1,5 @@
+"""Programme Python pour convertir deux nombres saisis en entiers"""
+
 # Demander de saisir le premier nombre ( sous forme de chaîne de caractères)
 nombre1_str = input("Entrez le premier nombre: ")
 
@@ -21,8 +23,8 @@ somme = nombre1 + nombre2
 # Affichage du résultat avec les nombres entiers :
 print(f"La somme de {nombre1} et {nombre2} est : {somme}")
 
-#Affichage du résultat avec les chaînes de caractères originales :
+# Affichage du résultat avec les chaînes de caractères originales :
 print(f"La somme de {nombre1_str} et {nombre2_str} est : {somme}")
 
-#Affichage du résultat avec la concaténation de chaînes :
+# Affichage du résultat avec la concaténation de chaînes :
 print("La somme de", nombre1, "et", nombre2, "est :", somme)

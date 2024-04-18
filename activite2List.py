@@ -1,17 +1,23 @@
-
-def rotation_droite(liste, n):    #j'ai défini une fonction pour effectuer une rotation à droite d'une liste
-    
-    return liste[-n:] + liste[:-n]   # Effectue la rotation à droite en utilisant l'opération de slicing
+""" Programme Py pour effectuer rotation à droite des éléments d'une liste """
 
 
+# j'ai défini une fonction pour effectuer une rotation à droite d'une liste
+def rotation_droite(liste, n):
 
-liste_str = input("Entrez les éléments de la liste séparés par des espaces : ")   # Saisie de la liste par l'utilisateur
-liste = liste_str.split()     #j'ai transformer en tableau de caractèrej'ai séparé la chaine de caractr par espace en utilisant split()
+    return liste[-n:] + liste[:-n]
+# Effectue la rotation à droite en utilisant l'opération de slicing
 
 
-n = int(input("Entrez le nombre de rotations à droite : "))    # Saisie du nombre de rotations par l'utilisateur
+# Saisie de la liste par l'utilisateur
+liste_str = input("Entrez les éléments de la liste séparés par des espaces : ")
 
+# Transformation de la chaîne en tableau de caractères et séparation par espace
+liste = liste_str.split()
 
-liste_rot = rotation_droite(liste, n)             #le resultat je l'ai mis dans une variable Appel de la fonction de rotation et affichage du résultat
+# Saisie du nombre de rotations par l'utilisateur
+n = int(input("Entrez le nombre de rotations à droite : "))
+
+# le résultat est assigné à la variable liste_rot.
+liste_rot = rotation_droite(liste, n)
 print(f"Liste originale : {liste}")
 print(f"Liste après rotation à droite de {n} positions : {liste_rot}")
