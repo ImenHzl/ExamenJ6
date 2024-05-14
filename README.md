@@ -1,1 +1,2 @@
-liste des corrigés des activités
+# activité python
+cette série d'exercices permet de travailler avec les liste, les boucles, les ensembles, les dictionnaires, les chaines...
